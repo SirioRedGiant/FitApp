@@ -8,3 +8,10 @@
   font-size: 1.5rem;
   margin-bottom: 5px;
 }
+
+/* 2. 🌟 Evidenziare la terza stat card */
+/* Seleziona la terza card usando :nth-child(3) */
+.stats-grid:nth-child(3) {
+  background: linear-gradient(135deg, #4a69bd 0%, #60a3bc 100%);
+  color: white;
+}
