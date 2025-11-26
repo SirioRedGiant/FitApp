@@ -38,3 +38,8 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* l'ombra */
 }
 
+/* 4. 📌 Evidenziare il secondo elemento di piano allenamento */
+.workout-plan:nth-child(3) {
+  border-left: 5px solid #f39c12; /* Bordo arancione a sinistra */
+  background: #fff8e1; /* Sfondo giallo */
+}
