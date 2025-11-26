@@ -43,3 +43,11 @@
   border-left: 5px solid #f39c12; /* Bordo arancione a sinistra */
   background: #fff8e1; /* Sfondo giallo */
 }
+
+/* 5. 🟢 Bordi verdi per primo e ultimo esercizio fisico */
+/* Evidenzia sia il primo che l'ultimo elemento della lista esercizi */
+.exercise-item:first-child,
+.exercise-item:last-child {
+  border-left-color: #27ad5f; /* Imposta il colore del bordo sinistro su verde */
+  background: #cddbce; /* Imposta lo sfondo su verde molto chiaro */
+}
