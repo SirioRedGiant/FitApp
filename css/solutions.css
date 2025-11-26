@@ -13,5 +13,28 @@
 /* Seleziona la terza card usando :nth-child(3) */
 .stats-grid:nth-child(3) {
   background: linear-gradient(135deg, #4a69bd 0%, #60a3bc 100%);
-  color: white;
+  color: white; /* Rende il testo principale bianco per contrasto */
 }
+
+.stats-grid:nth-child(3) .stat-number {
+  color: white; /* Assicura che anche il numero sia bianco */
+}
+
+.stats-grid:nth-child(3) .stat-label {
+  color: #ecf0f1; /* Colore leggermente grigio per l'etichetta secondaria */
+}
+
+.stats-grid:nth-child(3) .stat-number {
+  color: white; /* Cambia il colore del numero in bianco */
+}
+
+.stats-grid:nth-child(3) .stat-label {
+  color: #ecf0f1; /* Colore leggermente grigio per la critta nella 3°card */
+}
+
+/* 3. ✨ Effetto hover sulle stat cards (e bonus transition) */
+.stats-grid:hover {
+  transform: translateY(-5px); /* Solleva la carta di 8px */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* l'ombra */
+}
+
