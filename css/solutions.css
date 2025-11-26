@@ -51,4 +51,72 @@
   border-left-color: #27ad5f; /* Imposta il colore del bordo sinistro su verde */
   background: #cddbce; /* Imposta lo sfondo su verde molto chiaro */
 }
-/* HELLO*/
+
+/* 6. ⚡ Icona fulmine negli esercizi pari */
+.exercise-item:nth-child(even) .exercise-name::before {
+  content: "⚡ "; /* Aggiunge l'emoji e uno spazio prima del nome */
+}
+
+/* 7-8. 🎯 Focus sui campi input (con transizione fluida) */
+.goal-input-group input:focus,
+.goal-input-group select:focus {
+  border-color: #667eea; /* Bordo blu */
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3); /* Ombra blu */
+  outline: none; /* Rimuove l'outline predefinito del browser */
+}
+
+/* 9. 🔘 Miglioramenti al button (hover, colore, ombra) */
+.save-btn {
+  background: #48c9b0; /* Nuovo colore di sfondo */
+}
+
+.save-btn:hover {
+  transform: translateY(-2px); /* Si solleva di 2px all'hover */
+  box-shadow: 0 5px 15px rgba(72, 201, 176, 0.4); /* Ombra */
+}
+
+/* 10. 📊 Percentuale nella barra di progresso */
+.progress-fill::before {
+  content: "65%";
+  position: absolute;
+  right: 10px; /* Allineato a destra */
+  color: white;
+  font-size: 0.7rem;
+  top: 50%;
+  transform: translateY(-50%); /* Centra verticalmente */
+  font-weight: bold;
+}
+
+/* 11-12. 🧭 Migliorie alla navigazione (hover e stato attivo) */
+
+/* Stato attivo per il primo link (Home) */
+.nav-item:first-child,
+.nav-item:hover {
+  background: #34495e; /* Sfondo leggermente più scuro */
+  color: #667eea; /* Testo blu */
+}
+
+/* 13. 💭 Virgolette alla citazione */
+.quote-box {
+  position: relative; /* Necessario per posizionare gli pseudo-elementi */
+}
+
+.quote-box::before {
+  content: '"';
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 4rem;
+  opacity: 0.3; /* Opacità ridotta */
+  color: white;
+}
+
+.quote-box::after {
+  content: '"';
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-size: 4rem;
+  opacity: 0.3; /* Opacità ridotta */
+  color: white;
+}
