@@ -34,6 +34,7 @@
 
 /* 3. ✨ Effetto hover sulle stat cards (e bonus transition) */
 .stats-grid:hover {
+  transition: translate 0.3s ease-in, box-shadow 0.3s ease;
   transform: translateY(-5px); /* Solleva la carta di 8px */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* l'ombra */
 }
